@@ -308,6 +308,14 @@ section > .container {
   margin-bottom: 5px;
 }
 
+.border-bottom-orange {
+  border-bottom: 1px orange solid;
+}
+
+#certificate .component:nth-child(3) {
+  border-bottom: 1px orange solid;
+}
+
 /*! PROJECT */
 .projects {
   display: flex;
