@@ -1,0 +1,476 @@
+* {
+  margin: 0px;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: auto;
+  margin: auto;
+  display: block;
+  padding: 30px 50px;
+}
+
+#nav-bar {
+  text-align: center;
+}
+
+.box-shadow {
+  box-shadow: 1px 1px 5px 1px #ececec;
+}
+.section-title {
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 32px;
+}
+
+.component h2 {
+  font-weight: 500;
+  font-size: calc(1rem + 0.8vw);
+}
+
+.box {
+  margin-top: 20px;
+}
+
+/*! BANNER */
+#banner {
+  color: #f7f7f7;
+  position: relative;
+  /* css ảnh background và có màu tối trùm lên ảnh */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/banner.jpg);
+  background-size: cover;
+  background-position: center top;
+  height: 60vh;
+  padding: 50px;
+}
+
+.banner-text {
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 150px;
+  right: 0px;
+  width: 100%;
+}
+
+#banner p {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+#banner span {
+  color: white;
+  font-size: 16px;
+}
+/*! nav bar */
+#nav-bar nav {
+  padding: 0;
+  border-top: 2px solid rgb(231, 231, 231);
+  border-bottom: 2px solid rgb(231, 231, 231);
+}
+#nav-bar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+#nav-bar li {
+  height: 2rem;
+  display: flex;
+  font-size: 0.7rem;
+}
+
+.my-image {
+  height: 165px;
+  width: 160px;
+  border: #f8f0f0 solid 8px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+  box-shadow: 0.1px 0.1px 5px 0px #7e7e7e;
+  position: relative;
+  top: -50px;
+  right: -25px;
+}
+#nav-bar a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(100, 100, 100);
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#nav-bar .nav-bar-text {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+#nav-bar i {
+  color: #3eace1;
+  font-size: 1rem;
+}
+/*! ABOUT */
+#about .container {
+  display: flex;
+  padding: 0px 0px;
+  width: 100%;
+  margin: 0px;
+  color: rgba(0, 0, 0, 0.737);
+}
+#about .container p {
+  font-size: 15px;
+  line-height: 1.4em;
+}
+#target {
+  background-color: rgb(245, 245, 245);
+  padding: 2rem 2rem 3rem 2rem;
+}
+#personal-info {
+  background-color: rgb(240, 240, 240);
+  margin-top: 0px;
+  padding: 2rem 1.5rem 3rem 2rem;
+}
+#personal-info ul {
+  list-style: none;
+  padding-left: 0px;
+}
+#personal-info li {
+  padding-bottom: 10px;
+}
+#personal-info span {
+  font-weight: 600;
+}
+#personal-info i {
+  color: #3eace1;
+}
+.social-media-list {
+  display: flex;
+  margin-top: 20px;
+}
+.social-media-list button {
+  border: 0px;
+  padding: 0px;
+  margin-right: 10px;
+}
+/*! JOB INFO  */
+#job-info {
+  color: rgb(100, 100, 100);
+}
+#job-info .component {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 70px 1fr;
+  border: 1px solid rgb(231, 231, 231);
+  margin: 20px;
+  padding: 40px 20px 30px 20px;
+  align-items: baseline;
+}
+/* Kinh nghiệm - Học vấn -Hoạt động */
+.ic-toolbox {
+  font-size: calc(1.2rem + 1.2vw);
+  margin-left: calc(5vw);
+}
+.ic-pencil {
+  font-size: calc(1.2rem + 1.2vw);
+  margin-left: calc(5vw);
+}
+#job-info ul {
+  grid-column: 1/3;
+  line-height: 1.5;
+  margin: 10px 0px 10px;
+  list-style: none;
+  position: relative;
+  padding-inline-start: 10px;
+}
+#job-info li {
+  position: relative;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+/*? bullet point màu xanh dương trước mỗi element li */
+#job-info li:before {
+  content: "";
+  background-color: #1042c0;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 10px;
+  border-radius: 50%;
+  position: relative;
+  top: -1px;
+}
+
+.time {
+  font-style: italic;
+  margin-top: 7px;
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+.time span {
+  background-color: #3eace1;
+  color: white;
+  padding: 2px 15px 3px 10px;
+  border-radius: 20px;
+}
+#job-info .component b {
+  font-size: 16px;
+  font-weight: 500;
+}
+#job-info .component h1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+/* Sở thích */
+.ic-telescope {
+  font-size: calc(1.2rem + 1.2vw);
+  margin-left: calc(5vw);
+}
+.content-item-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: solid 1px #1042c0;
+  margin-bottom: 8px;
+}
+
+.content-item-icon i {
+  color: #1042c0;
+  font-size: 20px;
+}
+.hobby {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: minmax(50px, auto);
+  justify-items: center;
+  grid-column: 1/3;
+}
+.hobby p {
+  font-size: 14px;
+  padding-top: 7px;
+}
+/* Ngôn ngữ - kỹ năng */
+.progess-bar {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.blue-bar {
+  background: #1042c0;
+  display: inline-block;
+  height: 2px;
+  width: 45px;
+
+  margin-right: 10px;
+}
+.white-bar {
+  background-color: #c6c6c6;
+  display: inline-block;
+  height: 2px;
+  width: 45px;
+
+  margin-right: 10px;
+}
+.ic-tools-2 {
+  font-size: calc(1.2rem + 1.2vw);
+  margin-left: calc(5vw);
+}
+.ic-mic {
+  font-size: calc(1.2rem + 1.2vw);
+  margin-left: calc(5vw);
+}
+/*! CERTIFICATE */
+#certificate .component {
+  color: rgb(100, 100, 100);
+  padding: 20px 20px 20px;
+  font-size: 0.9rem;
+}
+#certificate img {
+  padding-left: 20px;
+}
+#certificate .description {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+#certificate .title {
+  /* text */
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/*! PROJECT */
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+#project .component {
+  border: 1px solid rgb(231, 231, 231);
+  color: rgb(100, 100, 100);
+  font-size: 15px;
+}
+#project img {
+  object-fit: contain;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  width: 100%;
+}
+.icon-lamp {
+  font-weight: 200;
+  font-size: 17px;
+}
+.icon-user {
+  font-size: 17px;
+}
+.project-title {
+  text-transform: uppercase;
+  padding: 15px 20px 10px;
+  border-bottom: 1px solid rgb(231, 231, 231);
+}
+.project-title p {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.project-author {
+  display: flex;
+  font-size: 13px;
+  padding: 10px;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  margin-left: 10px;
+}
+.project-author p {
+  color: #f7f7f7;
+  width: 3rem;
+  height: 1.7rem;
+  background-color: #199cdb;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+.project-author div {
+  margin-right: 10px;
+}
+.projects table {
+  border-spacing: 0;
+}
+
+.projects td {
+  min-width: calc(3rem + 3vw);
+  min-height: 80px;
+  padding: 15px 5px;
+  border-bottom: 1px solid rgb(231, 231, 231);
+}
+.projects .component tr:last-child td {
+  border-bottom: 0px;
+}
+/*! FOOTER */
+#footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+#footer li {
+  margin-right: 25px;
+  color: rgb(161, 161, 161);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+.icon-facebook-circled {
+  color: #3eace1;
+  font-size: 250%;
+  padding: 0px;
+}
+.icon-linkedin-circled {
+  color: #3eace1;
+  font-size: 250%;
+  padding: 0px;
+}
+.icon-github-circled {
+  color: #3eace1;
+  font-size: 250%;
+  padding: 0px;
+}
+.row-grid {
+  grid-column: 1/3 !important;
+}
+
+/*! ---TRANG DIGITAL CV (PROJECT DETAIL) --- */
+.icon-flag {
+  object-fit: contain;
+  width: 1.5rem;
+  margin: 0.5rem 2vw;
+}
+.icon {
+  object-fit: contain;
+  width: 1.5rem;
+  margin: 0.5rem 1rem;
+}
+#digital-cv {
+  border: calc(2rem - 0.6vw) solid blue;
+}
+#digital-cv .section-title {
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+  font-weight: 600;
+  color: blue;
+}
+#digital-cv .cv-container {
+  padding: 2rem;
+  background-color: rgb(240, 248, 255);
+}
+#goal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#scopes {
+  border-top: calc(2rem - 0.8vw) solid blue;
+  grid-row: 2/3;
+}
+#primary {
+  border-bottom: calc(2rem - 0.8vw) solid blue;
+}
+#team {
+  border-top: calc(2rem - 0.8vw) solid blue;
+  border-bottom: calc(2rem - 0.8vw) solid blue;
+}
+.border-bottom-1 {
+  border-bottom: 2px solid rgb(210, 210, 210);
+}
+#digital-cv .col-md-9 .row {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.icon-number {
+  object-fit: contain;
+  width: 3.5rem;
+  margin: 0rem 0.5rem;
+}
+.timeline-text {
+  border-bottom: #199cdb dashed 1px;
+  padding-left: 1vw;
+  width: 100%;
+  line-height: 1.7rem;
+}
+.timeline-text p {
+  margin-bottom: 0.5rem;
+}
+.timeline-component {
+  margin-bottom: 2.5vh;
+}
+
+.digital-cv-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
