@@ -463,6 +463,13 @@ section > .container {
   width: 100%;
   line-height: 1.7rem;
 }
+
+.timeline-text p:first-of-type {
+  color: #838383;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
 .timeline-text p {
   margin-bottom: 0.5rem;
 }
